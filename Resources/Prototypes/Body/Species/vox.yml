@@ -124,12 +124,12 @@
     leftHandDisplacement:
       sizeMaps:
         32:
-          sprite: Mobs/Species/Vox/displacement.rsi
+          sprite: _Pinwheel/Mobs/Species/Vox/displacement.rsi
           state: hand_l
     rightHandDisplacement:
       sizeMaps:
         32:
-          sprite: Mobs/Species/Vox/displacement.rsi
+          sprite: _Pinwheel/Mobs/Species/Vox/displacement.rsi
           state: hand_r
   - type: InitialBody
     organs:
@@ -163,8 +163,10 @@
   id: MobVox
   name: Urist McVox
   components:
-  - type: Damageable
-    damageModifierSet: Vox
+  # Pinwheel-stt - species standards
+  # type: Damageable
+  # damageModifierSet: Vox
+  # Pinwheel-stt - species standards
   - type: Speech
     speechVerb: Vox
     speechSounds: Vox
