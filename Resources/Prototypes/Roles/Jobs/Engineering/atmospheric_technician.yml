@@ -3,6 +3,7 @@
   name: job-name-atmostech
   description: job-description-atmostech
   playTimeTracker: JobAtmosphericTechnician
+  setPreference: false # Pinwheel - gooncave eviction
   requirements:
   - !type:DepartmentTimeRequirement
     department: Engineering
@@ -19,8 +20,6 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: FirefighterDay
     prototype: FireAxe
-
-# The job is slated for removal anyhow - Pinwheel
 
 - type: startingGear
   id: AtmosphericTechnicianGear
