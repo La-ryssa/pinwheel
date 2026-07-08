@@ -251,34 +251,7 @@
   - type: ThiefRole
 
 # Traitors
-- type: entity
-  parent: BaseMindRoleAntag
-  id: MindRoleTraitor
-  name: Traitor Role
-  components:
-  - type: MindRole
-    antagPrototype: Traitor
-    exclusiveAntag: true
-    subtype: role-subtype-traitor
-  - type: TraitorRole
-
-- type: entity
-  parent: MindRoleTraitor
-  id: MindRoleTraitorSleeper
-  name: Sleeper Agent Role
-  components:
-  - type: MindRole
-    antagPrototype: TraitorSleeper
-
-- type: entity
-  parent: MindRoleTraitor
-  id: MindRoleTraitorReinforcement
-  name: Syndicate Reinforcement Role
-  components:
-  - type: MindRole
-    roleType: TeamAntagonist
-    subtype: role-subtype-traitor-reinforcement
-    antagPrototype: GenericTeamAntagonist
+# moved to it's own file. bye - Pinwheel - traitor remake
 
 # Wizards
 - type: entity
