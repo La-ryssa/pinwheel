@@ -47,7 +47,7 @@
     range: 5
     enabled: false
     sound:
-      path: /Audio/Ambience/Objects/server_fans.ogg
+      collection: ServerAmbientBase
   # functional
   - type: Anchorable
     flags: [ Anchorable ]
@@ -57,7 +57,11 @@
   - type: ContainerContainer
     containers:
       sabotage_container: !type:ContainerSlot
-  - type: SabotagableMachine
+  - type: SabotagableMachine # EDGE CASE USE
+    soundAmbientBase: # system mutes ambience on disk removal if this is undefined
+      collection: ServerAmbientBase
+    soundAmbientSabotage:
+      collection: ServerAmbientBase
   - type: Construction
     graph: ExtractableServer
     deconstructionTarget: null
@@ -168,6 +172,12 @@
     guides:
     - Science
 
+## Sound Collection
+- type: soundCollection
+  id: ServerAmbientBase
+  files:
+  - /Audio/Ambience/Objects/server_fans.ogg
+
 ## Construction Graph
 - type: constructionGraph
   id: ExtractableServer
@@ -230,7 +240,7 @@
   description: 'A NanoTrasen 32 TB high resilience data drive, built to withstand anything short of a nuclear detonation. This one contains compiled binaries of the "Hippocrates" analytical software, helping crew monitor servers process vital signs en-masse.'
   components:
   - type: Sprite
-    sprite: _Pinwheel/Devices/serverdisk.rsi
+    sprite: _Pinwheel/Devices/Sabotage/serverdisk.rsi
     layers:
     - state: icon
     - state: label
@@ -245,7 +255,7 @@
   description: 'A NanoTrasen 32 TB high resilience data drive, built to withstand anything short of a nuclear detonation. This one contains compiled binaries of the "Archimedes" analytical software, letting research servers process scientific data more efficiently.' # this will need some other effect when research points are axed. obviously
   components:
   - type: Sprite
-    sprite: _Pinwheel/Devices/serverdisk.rsi
+    sprite: _Pinwheel/Devices/Sabotage/serverdisk.rsi
     layers:
     - state: icon
     - state: label
@@ -257,12 +267,12 @@
   id: ServerDiskCrewMonitor
   name: steal-target-groups-serverdisk-crewmonitor
   sprite:
-    sprite: _Pinwheel/Devices/serverdisk.rsi
+    sprite: _Pinwheel/Devices/Sabotage/serverdisk.rsi
     state: icon
 
 - type: stealTargetGroup
   id: ServerDiskResearch
   name: steal-target-groups-serverdisk-research
   sprite:
-    sprite: _Pinwheel/Devices/serverdisk.rsi
+    sprite: _Pinwheel/Devices/Sabotage/serverdisk.rsi
     state: icon

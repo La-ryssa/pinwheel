@@ -16,7 +16,7 @@ public sealed partial class ResearchSystem
         SubscribeLocalEvent<ResearchServerComponent, TechnologyDatabaseModifiedEvent>(OnServerDatabaseModified);
         // Pinwheel-stt - traitor sabotage
         SubscribeLocalEvent<ResearchServerComponent, SabotagableMachineOpenedEvent>(OnMachineOpened);
-        SubscribeLocalEvent<ResearchServerComponent, SabotageToolRemoveEvent>(OnToolRemoved); // the disk is the "tool"
+        SubscribeLocalEvent<ResearchServerComponent, SabotageStopEvent>(OnSabotageStop); // technically true
         // Pinwheel-end - traitor sabotage
     }
 
@@ -161,18 +161,18 @@ public sealed partial class ResearchSystem
         if (!CanRun(ent.Owner))
             return; // cancel if unpowered
 
-        string message = Loc.GetString(ent.Comp.MessageDamage);
+        string message = Loc.GetString(ent.Comp.MessageOpen);
         _radio.SendRadioMessage(ent, message, ent.Comp.MessageChannel, ent);
     }
 
-    private void OnToolRemoved(Entity<ResearchServerComponent> ent, ref SabotageToolRemoveEvent args)
+    private void OnSabotageStop(Entity<ResearchServerComponent> ent, ref SabotageStopEvent args)
     {
         ent.Comp.Sabotaged = true;
 
         if (!CanRun(ent.Owner))
             return; // cancel if unpowered
 
-        string message = Loc.GetString(ent.Comp.MessageSabotage);
+        string message = Loc.GetString(ent.Comp.MessageRemove);
         _radio.SendRadioMessage(ent, message, ent.Comp.MessageChannel, ent);
     }
     // Pinwheel-end - traitor sabotage

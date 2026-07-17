@@ -42,6 +42,12 @@
         enum.PowerDeviceVisualLayers.Powered:
           True: { visible: true }
           False: { visible: false }
+  # audio
+  - type: AmbientSound
+    enabled: false
+    range: 7
+    sound:
+      collection: MailboxAmbientSabotage
   # functional
   - type: Anchorable
     flags: [ Anchorable ]
@@ -75,12 +81,14 @@
       collection: MailboxSabotageRemove
     soundComplete:
       collection: MailboxSabotageComplete
+    soundAmbientSabotage:
+      collection: MailboxAmbientSabotage
     toolInsertTime: 2s
     toolRemoveTime: 4s
     toolWhitelist:
-      tags: [ MailboxAutohacker ]
+      tags: [ MailboxHacker ]
   - type: Construction
-    graph: MailboxGraph
+    graph: MailboxSabotageGraph
     deconstructionTarget: null
     node: panel
   - type: Destructible
@@ -93,6 +101,11 @@
         node: bare
 
 ## Sound Collections
+- type: soundCollection
+  id: MailboxAmbientSabotage
+  files:
+  - /Audio/_Pinwheel/Structures/Machines/Mailbox/ambient_sabotage.ogg
+
 - type: soundCollection
   id: MailboxSabotageInsert
   files:
@@ -113,7 +126,7 @@
 
 ## Construction Graph
 - type: constructionGraph
-  id: MailboxGraph
+  id: MailboxSabotageGraph
   start: panel
   graph:
   - node: panel
@@ -140,18 +153,18 @@
 ## Macguffin
 - type: entity
   parent: BaseItem
-  id: MailboxAutohacker
+  id: MailboxHacker
   name: 1337 mail network autohacker
   description: A compact device designed for shunting into NanoTrasen bluespace mailboxes, using their hardware to authorize illicit transactions. Simply jam it anywhere on the circuit board and let it do its magic. The dream of script-kiddies sectorwide.
   components:
   - type: Sprite
-    sprite: _Pinwheel/Devices/autohacker.rsi
+    sprite: _Pinwheel/Devices/Sabotage/mailbox_hacker.rsi
     state: icon
   - type: Item
     shape:
     - 0,0,1,0
   - type: Tag
-    tags: [ MailboxAutohacker ]
+    tags: [ MailboxHacker ]
 
 - type: Tag
-  id: MailboxAutohacker
+  id: MailboxHacker
