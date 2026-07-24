@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Lady Death's Head (La_Ryssa on github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "riot_bullet-icon"
+    },
+    {
+      "name": "riot_bullet-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "riot_bullet-inhand-left",
+      "directions": 4
+    }
+  ]
+}

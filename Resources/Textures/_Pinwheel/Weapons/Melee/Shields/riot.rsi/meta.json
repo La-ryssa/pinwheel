@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Lady Death's Head (La_Ryssa on github) based on work from Citadel Station 13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "riot-icon"
+    },
+    {
+      "name": "riot-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "riot-inhand-left",
+      "directions": 4
+    }
+  ]
+}
