@@ -1549,15 +1549,6 @@
     prototypes: [SyndicateOperativeGearMonkey]
 
 - type: entity
-  id: MobMonkeySyndicateAgent
-  parent: MobBaseSyndicateMonkey
-  suffix: syndicate agent
-  components:
-    # make the player a traitor once its taken
-  - type: AutoTraitor
-    profile: TraitorReinforcement
-
-- type: entity
   id: MobMonkeySyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink
   parent: MobBaseSyndicateMonkey
   suffix: NukeOps
@@ -1707,15 +1698,6 @@
     - Syndicate
   - type: Loadout
     prototypes: [SyndicateOperativeGearMonkey]
-
-- type: entity
-  id: MobKoboldSyndicateAgent
-  parent: MobBaseSyndicateKobold
-  suffix: syndicate agent
-  components:
-    # make the player a traitor once its taken
-  - type: AutoTraitor
-    profile: TraitorReinforcement
 
 - type: entity
   id: MobKoboldSyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink
@@ -2704,17 +2686,6 @@
         reagents:
         - ReagentId: Laughter
           Quantity: 150
-- type: entity
-  name: wizard spider
-  parent: MobGiantSpider
-  id: MobGiantSpiderWizard
-  description: This spider looks a little magical
-  suffix: Wizard
-  components:
-  - type: Accentless
-    removes:
-    - type: ReplacementAccent
-      accent: xeno  #let this wizard speak
 
 - type: entity
   name: possum
