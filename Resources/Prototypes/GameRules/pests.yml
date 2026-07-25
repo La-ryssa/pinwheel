@@ -74,8 +74,6 @@
       prob: 0.03
     - id: MobMothroach
       prob: 0.008
-    - id: MobMoproach
-      prob: 0.004
 
 - type: entity
   id: SnailMigrationLowPop
@@ -110,8 +108,6 @@
       prob: 0.002
     - id: MobSnailMoth
       prob: 0.002
-    - id: MobSnailInstantDeath
-      prob: 0.00001 #  ~ 1:2000 snails
 
 - type: entity
   parent: BaseStationEventShortDelay
@@ -139,8 +135,6 @@
         children: # Increased chances for special roaches on purpose. Makes it a bit more interesting.
         - id: MobCockroach
         - id: MobMothroach
-        - id: MobMoproach
-          weight: 0.5
       - !type:GroupSelector
         children:
         - id: MobMouse
