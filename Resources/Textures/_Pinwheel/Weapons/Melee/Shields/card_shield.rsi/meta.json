@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Card shield sprites by TaoNewt (github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "cardshield-icon"
+    },
+    {
+      "name": "cardshield-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "cardshield-inhand-left",
+      "directions": 4
+    }
+  ]
+}
