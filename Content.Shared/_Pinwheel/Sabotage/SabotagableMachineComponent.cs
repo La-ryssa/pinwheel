@@ -13,7 +13,8 @@ namespace Content.Shared._Pinwheel.Sabotage;
 /// <remarks>
 /// Requires <see cref="ApcPowerReceiverComponent"/> for its Update loop
 /// </remarks>
-[RegisterComponent, AutoGenerateComponentState]
+[RegisterComponent]
+[NetworkedComponent, AutoGenerateComponentState]
 [Access(typeof(SabotagableMachineSystem))]
 public sealed partial class SabotagableMachineComponent : Component
 {
@@ -37,6 +38,13 @@ public sealed partial class SabotagableMachineComponent : Component
     [DataField, AutoNetworkedField]
     [ViewVariables(VVAccess.ReadOnly)]
     public TimeSpan SabotageComplete = new();
+
+    /// <summary>
+    /// If the machine should fire pause/unpause events on losing/gaining power respectively
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    [ViewVariables(VVAccess.ReadWrite)]
+    public bool PauseWithPower = true;
 
     /// <summary>
     /// Is the container obstructed by a lock or panel or somesuch

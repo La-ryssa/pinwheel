@@ -1,6 +1,6 @@
 ## Teleporter
 - type: entity
-  id: CargoMailbox
+  id: MachineMailbox
   parent: BaseMachinePowered
   name: bluespace mailbox
   description: Periodically recieves mail addressed to someone on the station. The maintenance panel looks like it could be unscrewed and pried off, or bashed in.
@@ -95,7 +95,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 80
       behaviors:
       - !type:ChangeConstructionNodeBehavior
         node: bare
@@ -152,7 +152,7 @@
 
 ## Macguffin
 - type: entity
-  parent: BaseItem
+  parent: [ BaseItem, BaseSyndicateContraband ]
   id: MailboxHacker
   name: 1337 mail network autohacker
   description: A compact device designed for shunting into NanoTrasen bluespace mailboxes, using their hardware to authorize illicit transactions. Simply jam it anywhere on the circuit board and let it do its magic. The dream of script-kiddies sectorwide.
