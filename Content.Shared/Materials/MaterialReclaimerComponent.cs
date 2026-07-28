@@ -1,7 +1,11 @@
-﻿using Content.Shared.Whitelist;
+﻿using Content.Shared.Damage;
+using Content.Shared.Damage.Prototypes;
+using Content.Shared.FixedPoint;
+using Content.Shared.Whitelist;
 using JetBrains.Annotations;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Content.Shared.Damage; // Pinwheel - survivable recycler
@@ -139,14 +143,23 @@ public sealed partial class MaterialReclaimerComponent : Component
     [DataField, AutoNetworkedField]
     public int ItemsProcessed;
 
-    // Pinwheel-stt - survivable recycler
     /// <summary>
-    /// Damage to deal to entities when emagged
+    /// Damage that gets dealt when a creature is in the emagged recycler.
     /// </summary>
-    [DataField, AutoNetworkedField]
-    [ViewVariables]
-    public DamageSpecifier Damage = new();
-    // Pinwheel-end - survivable recycler
+    [DataField]
+    public DamageSpecifier? DamageOnEmag = new DamageSpecifier
+    {
+        DamageDict = new Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>
+        {
+            ["Slash"] = 35.0,
+        },
+    };
+
+    /// <summary>
+    /// If it should gib creatures when they enter and the machine is emagged
+    /// </summary>
+    [DataField]
+    public bool GibOnEmag = false;
 }
 
 [NetSerializable, Serializable]

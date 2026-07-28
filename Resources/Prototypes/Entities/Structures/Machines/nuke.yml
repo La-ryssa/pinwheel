@@ -110,10 +110,7 @@
     - GhostOnlyWarp
   - type: WarpPoint
     follow: true
-    location: nuclear bomb
-    blacklist:
-      tags:
-      - GhostOnlyWarp
+    location: location-nuclear-bomb
   - type: FTLSmashImmune
 
 - type: entity
