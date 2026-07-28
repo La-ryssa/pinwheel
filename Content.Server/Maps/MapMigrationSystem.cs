@@ -31,12 +31,18 @@ public sealed partial class MapMigrationSystem : EntitySystem
             return;
 
         // Verify that all of the entries map to valid entity prototypes.
-        foreach (var node in mappings.Children.Values)
+        // Pinwheel-stt - migrations
+        foreach (var mapping in mappings)
         {
-            var newId = ((ValueDataNode) node).Value;
-            if (!string.IsNullOrEmpty(newId) && newId != "null")
-                DebugTools.Assert(ProtoMan.HasIndex<EntityPrototype>(newId), $"{newId} is not an entity prototype.");
+            foreach (var node in mapping.Values)
+            {
+                var newId = ((ValueDataNode) node).Value;
+                if (!string.IsNullOrEmpty(newId) && newId != "null")
+                    DebugTools.Assert(ProtoMan.HasIndex<EntityPrototype>(newId),
+                        $"{newId} is not an entity prototype.");
+            }
         }
+        // Pinwheel-end - migrations
 #endif
     }
 

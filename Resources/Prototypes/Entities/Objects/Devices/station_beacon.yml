@@ -5,7 +5,7 @@
   description: A small device that transmits information to station maps. Can be configured.
   placement:
     mode: SnapgridCenter
-  suffix: Not teleport point, Ninja bombing target blacklist
+  suffix: Not teleport point
   components:
   - type: Sprite
     sprite: Objects/Devices/station_beacon.rsi
@@ -80,20 +80,13 @@
   parent: BaseStationBeacon
   id: TeleportStationBeacon # You can teleport to this Beacon using a teleport scroll
   suffix: Ninja bombing target blacklist
-  components:
-  - type: Tag
-    tags:
-    - TeleportScrollWarp
+  # components: # sorry. nothing. - Pinwheel
 
 - type: entity
   parent: BaseStationBeacon
   id: DefaultStationBeacon  # the ninja's objective is to bomb this location.
   suffix: General
   components:
-  - type: Tag
-    tags:
-    - NinjaBombingTarget
-    - TeleportScrollWarp
   - type: Construction
     graph: StationBeaconPart
     node: complete

@@ -153,12 +153,6 @@ public sealed partial class MaterialReclaimerComponent : Component
             ["Slash"] = 35.0,
         },
     };
-
-    /// <summary>
-    /// If it should gib creatures when they enter and the machine is emagged
-    /// </summary>
-    [DataField]
-    public bool GibOnEmag = false;
 }
 
 [NetSerializable, Serializable]

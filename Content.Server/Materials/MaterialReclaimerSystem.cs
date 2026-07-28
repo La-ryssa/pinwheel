@@ -158,35 +158,32 @@ public sealed partial class MaterialReclaimerSystem : SharedMaterialReclaimerSys
         if (component.ReclaimMaterials)
             SpawnMaterialsFromComposition(uid, item, completion * component.Efficiency, xform: xform);
 
-        var playSound = true;
+        // Pinhweel-stt - nerfed recyclers
+        bool destroy = true;
 
         if (CanDamageAndGib(uid, item, component))
         {
-            var didBloody = false;
-
-            if (component.DamageOnEmag is not null && _damage.TryChangeDamage(item, component.DamageOnEmag, false)) // It shouldn't ignore resistance
-                didBloody = true;
-
-            if (_destructible.CanDestroy(item) && component.GibOnEmag)
+            if (_destructible.CanDestroy(item) && component.DamageOnEmag is not null)
             {
                 var logImpact = HasComp<HumanoidProfileComponent>(item) ? LogImpact.Extreme : LogImpact.Medium;
-                _adminLogger.Add(LogType.Gib, logImpact, $"{ToPrettyString(item):victim} was gibbed by {ToPrettyString(uid):entity}");
+                _adminLogger.Add(LogType.Gib, logImpact, $"{ToPrettyString(item):victim} was minced by {ToPrettyString(uid):entity}");
 
-                playSound = false; // Gibbing already make the noise!
+                _damage.TryChangeDamage(item, component.DamageOnEmag);
 
-                _gibbing.Gib(item);
-
-                didBloody = true;
-            }
-
-            if (didBloody)
                 _appearance.SetData(uid, RecyclerVisuals.Bloody, true);
+
+                destroy = false;
+            }
         }
+        // Pinhweel-end - nerfed recyclers
 
         if (_destructible.CanDestroy(item) && component.ReclaimSolutions)
-            SpawnChemicalsFromComposition(uid, item, completion, playSound, component, xform);
+            SpawnChemicalsFromComposition(uid, item, completion, true, component, xform);
 
-        _destructible.DestroyEntity(item);
+        // Pinhweel-stt - nerfed recyclers
+        if (destroy)
+            _destructible.DestroyEntity(item);
+        // Pinhweel-end - nerfed recyclers
     }
 
     private void SpawnMaterialsFromComposition(EntityUid reclaimer,

@@ -105,9 +105,6 @@
   - type: ContainerContainer
     containers:
       Nuke: !type:ContainerSlot
-  - type: Tag
-    tags:
-    - GhostOnlyWarp
   - type: WarpPoint
     follow: true
     location: location-nuclear-bomb
