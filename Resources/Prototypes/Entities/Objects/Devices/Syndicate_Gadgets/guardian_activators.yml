@@ -20,22 +20,6 @@
     guardianProto: MobHoloClownGuardian
 
 - type: entity
-  parent: [BaseItem, BaseMagicalContraband]
-  id: GuardianDeck
-  name: guardian deck
-  description: A deck of guardian tarot cards, capable of binding a personal guardian to your body.
-  components:
-  - type: Sprite
-    sprite: Objects/Magic/deck.rsi
-    layers:
-      - state: deck
-  - type: GuardianCreator
-    guardianProto: MobIfritGuardian
-    emptyPopup: guardian-deck-invalid-creation
-    emptyExamine: guardian-deck-used-examine
-    usedSound: /Audio/Effects/guardian_deck_shuffle.ogg
-
-- type: entity
   parent: [BoxCardboard, BaseSyndicateContraband]
   id: BoxHoloparasite
   name: holoparasite box

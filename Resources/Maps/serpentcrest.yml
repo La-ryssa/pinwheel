@@ -1,19 +1,11 @@
 meta:
   format: 7
   category: Map
-<<<<<<< HEAD
-  engineVersion: 277.0.0
-  forkId: ""
-  forkVersion: ""
-  time: 07/26/2026 23:02:03
-  entityCount: 29070
-=======
   engineVersion: 282.0.0
   forkId: ""
   forkVersion: ""
   time: 07/11/2026 13:33:07
   entityCount: 29620
->>>>>>> remotes/wizards/stable
 maps:
 - 1
 grids:
@@ -7706,8 +7698,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -62.40383,26.552698
 - proto: ActionToggleBlock
   entities:
@@ -7960,7 +7950,6 @@ entities:
     - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 28840
->>>>>>> remotes/wizards/stable
 - proto: AirAlarm
   entities:
   - uid: 228
@@ -56421,8 +56410,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -43.5,35.5
 - proto: CargoMailTeleporter
   entities:
@@ -56431,7 +56418,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 60.5,-11.5
->>>>>>> remotes/wizards/stable
 - proto: Carpet
   entities:
   - uid: 197
@@ -72177,10 +72163,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-    - type: Fixtures
-      fixtures: {}
-=======
       pos: -3.5,-20.5
 - proto: ClockworkShield
   entities:
@@ -72197,7 +72179,6 @@ entities:
         actions: !type:Container
           ents:
           - 3986
->>>>>>> remotes/wizards/stable
 - proto: ClosetBombFilled
   entities:
   - uid: 5020
@@ -74930,8 +74911,6 @@ entities:
       desc: looks like an (un)lucky shot blew out the mini jetpack
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 22.250744,-64.840576
     - type: ActionsContainer
     - type: ContainerContainer
@@ -74940,7 +74919,6 @@ entities:
           ents:
           - 28562
           - 28563
->>>>>>> remotes/wizards/stable
     missingComponents:
     - GasTank
     - UserInterface
@@ -77910,10 +77888,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -2.5,-23.5
-<<<<<<< HEAD
-      parent: 2
-=======
->>>>>>> remotes/wizards/stable
 - proto: CrayonBox
   entities:
   - uid: 6046
@@ -77937,9 +77911,6 @@ entities:
       parent: 2
       rot: -1.5707963267948966 rad
       pos: -2.5,-18.5
-<<<<<<< HEAD
-      parent: 2
-=======
 - proto: CrewMonitoringServer
   entities:
   - uid: 6519
@@ -77947,7 +77918,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 57.5,24.5
->>>>>>> remotes/wizards/stable
 - proto: CriminalRecordsComputerCircuitboard
   entities:
   - uid: 3694
@@ -85744,8 +85714,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 40.315166,9.545124
     - type: GasTank
       toggleActionEntity: 28672
@@ -85755,7 +85723,6 @@ entities:
         actions: !type:Container
           ents:
           - 28672
->>>>>>> remotes/wizards/stable
 - proto: EmergencyOxygenTankFilled
   entities:
   - uid: 16966
@@ -86087,26 +86054,7 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-    - type: Fixtures
-      fixtures: {}
-- proto: ExtractableServerCrewMonitor
-  entities:
-  - uid: 6519
-    components:
-    - type: Transform
-      pos: 57.5,24.5
-      parent: 2
-- proto: ExtractableServerResearch
-  entities:
-  - uid: 6518
-    components:
-    - type: Transform
-      pos: 55.5,24.5
-      parent: 2
-=======
       pos: 23.5,-42.5
->>>>>>> remotes/wizards/stable
 - proto: FaxMachineBase
   entities:
   - uid: 1850
@@ -90771,8 +90719,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 47.34612,7.104811
     - type: HandheldLight
       toggleActionEntity: 6580
@@ -90788,13 +90734,10 @@ entities:
           showEnts: False
           occludes: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
   - uid: 7130
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -54.51977,-3.3180616
     - type: HandheldLight
       toggleActionEntity: 5380
@@ -90810,13 +90753,10 @@ entities:
           showEnts: False
           occludes: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
   - uid: 7131
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -60.57022,-3.353858
     - type: HandheldLight
       toggleActionEntity: 1794
@@ -90832,7 +90772,6 @@ entities:
           showEnts: False
           occludes: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
   - uid: 22802
     components:
     - type: Transform
@@ -118989,8 +118928,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -1.5483892,20.584082
 - proto: GravityGenerator
   entities:
@@ -119011,7 +118948,6 @@ entities:
       charge: 0
     - type: Physics
       bodyType: Dynamic
->>>>>>> remotes/wizards/stable
 - proto: GrenadeStinger
   entities:
   - uid: 5035
@@ -130977,8 +130913,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 12.351956,20.422295
     - type: GasTank
       toggleActionEntity: 23596
@@ -130991,7 +130925,6 @@ entities:
           ents:
           - 23586
           - 23596
->>>>>>> remotes/wizards/stable
 - proto: JetpackMiniFilled
   entities:
   - uid: 4122
@@ -131023,8 +130956,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 12.718499,20.40857
     - type: GasTank
       toggleActionEntity: 2645
@@ -131037,13 +130968,10 @@ entities:
           ents:
           - 2644
           - 2645
->>>>>>> remotes/wizards/stable
   - uid: 5957
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 12.418816,20.630312
     - type: GasTank
       toggleActionEntity: 5959
@@ -131056,7 +130984,6 @@ entities:
           ents:
           - 5958
           - 5959
->>>>>>> remotes/wizards/stable
 - proto: Jukebox
   entities:
   - uid: 28323
@@ -131199,8 +131126,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 57.563385,18.641706
     - type: HandheldLight
       toggleActionEntity: 6515
@@ -131218,13 +131143,10 @@ entities:
     - type: Physics
       canCollide: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
   - uid: 6700
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 13.680899,-55.77404
     - type: HandheldLight
       toggleActionEntity: 1900
@@ -131239,9 +131161,9 @@ entities:
           - 1900
           showEnts: False
           occludes: True
->>>>>>> remotes/wizards/stable
     - type: Physics
       canCollide: True
+    - type: ActionsContainer
   - uid: 7189
     components:
     - type: Transform
@@ -131261,8 +131183,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -9.498289,-4.313748
     - type: HandheldLight
       toggleActionEntity: 14302
@@ -131280,13 +131200,10 @@ entities:
     - type: Physics
       canCollide: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
   - uid: 10908
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -38.435814,-54.471195
     - type: HandheldLight
       toggleActionEntity: 5676
@@ -131304,15 +131221,12 @@ entities:
     - type: Physics
       canCollide: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
 - proto: LampBanana
   entities:
   - uid: 10514
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 66.50256,33.653336
     - type: HandheldLight
       toggleActionEntity: 10515
@@ -131330,15 +131244,12 @@ entities:
     - type: Physics
       canCollide: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
 - proto: LampGold
   entities:
   - uid: 629
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -2.0609403,35.66838
     - type: HandheldLight
       toggleActionEntity: 6549
@@ -131356,7 +131267,6 @@ entities:
     - type: Physics
       canCollide: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
   - uid: 2661
     components:
     - type: Transform
@@ -131373,8 +131283,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -17.579655,9.82454
     - type: HandheldLight
       toggleActionEntity: 24233
@@ -131392,7 +131300,6 @@ entities:
     - type: Physics
       canCollide: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
   - uid: 6956
     components:
     - type: Transform
@@ -131402,8 +131309,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 32.487255,50.702446
     - type: HandheldLight
       toggleActionEntity: 5680
@@ -131421,7 +131326,6 @@ entities:
     - type: Physics
       canCollide: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
   - uid: 25913
     components:
     - type: Transform
@@ -131432,8 +131336,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -13.454957,-54.296345
     - type: HandheldLight
       toggleActionEntity: 28841
@@ -131451,7 +131353,6 @@ entities:
     - type: Physics
       canCollide: True
     - type: ActionsContainer
->>>>>>> remotes/wizards/stable
 - proto: LampInterrogator
   entities:
   - uid: 5843
@@ -133135,36 +133036,7 @@ entities:
     components:
     - type: Transform
       parent: 26470
-<<<<<<< HEAD
-- proto: MachineGravityGenerator
-  entities:
-  - uid: 1190
-    components:
-    - type: Transform
-      pos: -51.5,15.5
-      parent: 2
-- proto: MachineGravityGeneratorMini
-  entities:
-  - uid: 28848
-    components:
-    - type: Transform
-      anchored: False
-      pos: -67.5,33.5
-      parent: 2
-    - type: PowerCharge
-      charge: 0
-    - type: Physics
-      bodyType: Dynamic
-- proto: MachineMailbox
-  entities:
-  - uid: 22316
-    components:
-    - type: Transform
-      pos: 60.5,-11.5
-      parent: 2
-=======
       pos: 2.5,6.5
->>>>>>> remotes/wizards/stable
 - proto: MachineMaterialSilo
   entities:
   - uid: 24307
@@ -135055,8 +134927,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -2.5935888,-44.27822
     - type: GasTank
       toggleActionEntity: 24548
@@ -135066,7 +134936,6 @@ entities:
         actions: !type:Container
           ents:
           - 24548
->>>>>>> remotes/wizards/stable
   - uid: 24551
     components:
     - type: Transform
@@ -149499,8 +149368,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: -58.61676,-2.423478
 - proto: ResearchAndDevelopmentServer
   entities:
@@ -149509,7 +149376,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 55.5,24.5
->>>>>>> remotes/wizards/stable
 - proto: Retractor
   entities:
   - uid: 8231
@@ -149530,8 +149396,6 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 5.694502,21.418985
     - type: Blocking
       blockingToggleActionEntity: 20971
@@ -149541,13 +149405,10 @@ entities:
         actions: !type:Container
           ents:
           - 20971
->>>>>>> remotes/wizards/stable
   - uid: 6340
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 5.272627,21.43461
     - type: Blocking
       blockingToggleActionEntity: 20972
@@ -149557,15 +149418,12 @@ entities:
         actions: !type:Container
           ents:
           - 20972
->>>>>>> remotes/wizards/stable
 - proto: RiotLaserShield
   entities:
   - uid: 6343
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 12.601956,21.516045
     - type: Blocking
       blockingToggleActionEntity: 23601
@@ -149575,13 +149433,10 @@ entities:
         actions: !type:Container
           ents:
           - 23601
->>>>>>> remotes/wizards/stable
   - uid: 6344
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 12.461331,21.62542
     - type: Blocking
       blockingToggleActionEntity: 23602
@@ -149591,7 +149446,6 @@ entities:
         actions: !type:Container
           ents:
           - 23602
->>>>>>> remotes/wizards/stable
 - proto: RiotShield
   entities:
   - uid: 6341
@@ -165298,40 +165152,19 @@ entities:
     components:
     - type: Transform
       parent: 2
-<<<<<<< HEAD
-=======
       pos: 5.5,-18.5
->>>>>>> remotes/wizards/stable
 - proto: VendingMachineRestockDonut
   entities:
   - uid: 5077
     components:
     - type: Transform
-<<<<<<< HEAD
-      pos: -9.5,21.5
-      parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        temperature: 293.14673
-        moles:
-          Oxygen: 1.7459903
-          Nitrogen: 6.568249
-      closeSound: !type:SoundPathSpecifier
-        path: /Audio/Effects/closetclose.ogg
-      openSound: !type:SoundPathSpecifier
-        path: /Audio/Effects/closetopen.ogg
-=======
       parent: 2
       pos: -9.5,21.5
     - type: EntityStorage
->>>>>>> remotes/wizards/stable
       whitelist:
         components:
         - MobState
         - Item
-<<<<<<< HEAD
-=======
       openSound: !type:SoundPathSpecifier
         path: /Audio/Effects/closetopen.ogg
       closeSound: !type:SoundPathSpecifier
@@ -165342,7 +165175,6 @@ entities:
         moles:
           Oxygen: 1.7459903
           Nitrogen: 6.568249
->>>>>>> remotes/wizards/stable
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container

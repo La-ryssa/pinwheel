@@ -8,7 +8,6 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
-using Content.Shared.Damage; // Pinwheel - survivable recycler
 
 namespace Content.Shared.Materials;
 

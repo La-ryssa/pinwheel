@@ -4,13 +4,8 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-<<<<<<< HEAD
-  time: 07/23/2026 15:37:47
-  entityCount: 9767
-=======
   time: 05/26/2026 22:42:04
   entityCount: 9771
->>>>>>> remotes/wizards/stable
 maps: []
 grids:
 - 1668
@@ -24115,6 +24110,13 @@ entities:
     - type: Transform
       pos: 6.515189,7.596311
       parent: 1668
+- proto: CrewMonitoringServer
+  entities:
+  - uid: 8793
+    components:
+    - type: Transform
+      pos: -10.5,-6.5
+      parent: 1668
 - proto: CrowbarGreen
   entities:
   - uid: 3173
@@ -27305,13 +27307,6 @@ entities:
       parent: 1668
     - type: Fixtures
       fixtures: {}
-- proto: ExtractableServerCrewMonitor
-  entities:
-  - uid: 8793
-    components:
-    - type: Transform
-      pos: -10.5,-6.5
-      parent: 1668
 - proto: ExtradimensionalOrangeSeeds
   entities:
   - uid: 1032
@@ -62009,6 +62004,13 @@ entities:
     - type: Transform
       pos: -30.479265,-10.454217
       parent: 1668
+- proto: WeaponForceGunAdmin
+  entities:
+  - uid: 9550
+    components:
+    - type: Transform
+      pos: -30.487606,12.552096
+      parent: 1668
 - proto: WeaponLaserCannon
   entities:
   - uid: 2393
@@ -62436,6 +62438,13 @@ entities:
     components:
     - type: Transform
       pos: -38.44605,13.4853525
+      parent: 1668
+- proto: WeaponTetherGunAdmin
+  entities:
+  - uid: 9551
+    components:
+    - type: Transform
+      pos: -30.503231,10.552096
       parent: 1668
 - proto: WeaponXrayCannon
   entities:

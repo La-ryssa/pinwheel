@@ -140,7 +140,6 @@
   - type: Appearance
 
 - type: entity
-  name: pirate cannon
   parent: BaseWeaponLauncher
   id: WeaponLauncherPirateCannon
   name: pirate cannon
@@ -177,40 +176,6 @@
   id: WeaponGrapplingGun
   name: grappling gun
   components:
-<<<<<<< HEAD
-    - type: Item
-      size: Small
-      shape:
-      - 0,0,1,0
-      - 0,1,0,1
-      storedOffset: 0,-6
-    - type: AmmoCounter
-    - type: GrapplingGun
-    - type: Gun
-      soundGunshot: /Audio/Weapons/Guns/Gunshots/harpoon.ogg
-      fireRate: 0.5
-      clumsyProof: true
-    - type: BasicEntityAmmoProvider
-      proto: GrapplingHook
-      capacity: 1
-    - type: Sprite
-      sprite: Objects/Weapons/Guns/Launchers/grappling_gun.rsi
-      layers:
-        - state: base
-        - state: base-unshaded
-          map: [ "unshaded" ]
-          visible: true
-    - type: UseDelay
-      delay: 1.5
-    - type: Appearance
-    - type: GenericVisualizer
-      visuals:
-        enum.TetherVisualsStatus.Key:
-          unshaded:
-            True: { state: base-unshaded }
-            False: { state: base-unshaded-off }
-    - type: PacifismAllowedGun
-=======
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/grappling_gun.rsi
     layers:
@@ -243,25 +208,3 @@
           True: { state: base-unshaded }
           False: { state: base-unshaded-off }
   - type: PacifismAllowedGun
-
-# Admeme
-- type: entity
-  parent: WeaponLauncherMultipleRocket
-  id: WeaponLauncherAdmemeMeteorLarge
-  name: meteor launcher
-  suffix: Admeme
-  description: It fires large meteors.
-  components:
-  - type: BallisticAmmoProvider
-    proto: MeteorMedium
-
-- type: entity
-  parent: WeaponLauncherAdmemeMeteorLarge
-  id: WeaponLauncherAdmemeImmovableRodSlow
-  name: immovable rod launcher
-  suffix: Admeme
-  description: It fires slow immovable rods.
-  components:
-  - type: BallisticAmmoProvider
-    proto: ImmovableRodSlow
->>>>>>> remotes/wizards/stable

@@ -685,7 +685,6 @@
     - charge-artifact-popup
 
 - type: entity
-  id: XenoArtifactMagnet
   parent: BaseOneTimeXenoArtifactEffect
   id: XenoArtifactMagnet
   description: Create small gravity well

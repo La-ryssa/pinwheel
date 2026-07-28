@@ -144,7 +144,6 @@
     - GasCanisters
   - type: Paintable
     group: Canisters
->>>>>>> remotes/wizards/stable
 
 - type: entity
   parent: GasCanister

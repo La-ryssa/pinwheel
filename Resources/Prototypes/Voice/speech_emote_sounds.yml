@@ -309,6 +309,7 @@
     DefaultDeathgasp:
       collection: DeathGasp
 
+- type: emoteSounds
   id: UnisexMoth
   voiceSelectorName: humanoid-profile-editor-voice-neutral
   params:
