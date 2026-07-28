@@ -23,9 +23,5 @@
   name: objective-issuer-paradox
 
 - type: objectiveIssuer
-  id: SpaceDragon
-  name: objective-issuer-dragon
-
-- type: objectiveIssuer
   id: Thief
   name: objective-issuer-thief
