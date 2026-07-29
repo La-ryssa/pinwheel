@@ -16,6 +16,11 @@ using Robust.Shared.Random;
 using System.Linq;
 using System.Text;
 using Content.Server.Codewords;
+// Pinwheel-stt - traitor remake
+using Content.Server.Antag.Components;
+using Content.Shared.Cuffs.Components;
+using Content.Shared.GameTicking.Components;
+// Pinwheel-end - traitor remake
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -32,6 +37,7 @@ public sealed partial class TraitorRuleSystem : GameRuleSystem<TraitorRuleCompon
     [Dependency] private SharedRoleSystem _roleSystem = default!;
     [Dependency] private UplinkSystem _uplink = default!;
     [Dependency] private CodewordSystem _codewordSystem = default!;
+    [Dependency] private ObjectivesSystem _objective = default!; // Pinwheel - traitor remake
 
     public override void Initialize()
     {
@@ -40,8 +46,117 @@ public sealed partial class TraitorRuleSystem : GameRuleSystem<TraitorRuleCompon
         Log.Level = LogLevel.Debug;
 
         SubscribeLocalEvent<TraitorRuleComponent, AfterAntagEntitySelectedEvent>(AfterEntitySelected);
-        SubscribeLocalEvent<TraitorRuleComponent, ObjectivesTextPrependEvent>(OnObjectivesTextPrepend);
+        // SubscribeLocalEvent<TraitorRuleComponent, ObjectivesTextPrependEvent>(OnObjectivesTextPrepend); // Pinwheel - traitor remake
     }
+
+// Pinwheel-stt - traitor remake
+    protected override void AppendRoundEndText(EntityUid uid,
+        TraitorRuleComponent traitor,
+        GameRuleComponent rule,
+        ref RoundEndTextAppendEvent args)
+    {
+        base.AppendRoundEndText(uid, traitor, rule, ref args);
+
+        if (!GetOutcome((uid, traitor), out int outcome))
+            return;
+
+        args.AddLine(Loc.GetString($"round-end-win-label-traitor-{outcome}"));
+        args.AddLine(Loc.GetString($"round-end-win-desc-traitor-{outcome}"));
+        /* this is currently listed by ObjectivesSystem which is #bad
+         * but i cba rewriting 3 systems from scratch right now. smiles.
+        args.AddLine(
+            Loc.GetString("objectives-round-end-result",
+                ("count", traitor.TraitorMinds.Count()),
+                ("agent", "PLACEHOLDER")
+            ));
+        */
+
+        if(traitor.GiveCodewords)
+            args.AddLine(
+                Loc.GetString("traitor-round-end-codewords",
+                    ("codewords",
+                    string.Join(", ", _codewordSystem.GetCodewords(traitor.CodewordFactionPrototypeId))
+                    )
+                )
+            );
+
+        args.AddLine("");
+    }
+
+    /// <summary>
+    /// outputs an int from 1 to 5, indicating the scale of the victory.
+    /// from traitor major (1) to crew major (5)
+    /// returning false means something has went wrong with the calculation
+    /// - Are all traitors dead or restrained?
+    /// - yes:
+    /// -- Are all objectives complete:
+    /// -- no:
+    /// --- out 5, crew major
+    /// -- yes:
+    /// --- out 4, crew minor
+    /// - no:
+    /// -- Are all objectives complete:
+    /// -- no:
+    /// --- Are more than half of all objectives complete?
+    /// --- no:
+    /// ---- out 3, neutral
+    /// --- yes:
+    /// ---- out 2, traitor minor
+    /// -- yes:
+    /// --- out 1, traitor major
+    /// </summary>
+    private bool GetOutcome(Entity<TraitorRuleComponent> ent, out int outcome)
+    {
+        outcome = 1;
+
+        if (!TryComp(ent, out AntagSelectionComponent? selection))
+            return false; // fail if rule ent has no selection
+
+        var minds = _antag.GetAntagMinds((ent.Owner, selection));
+
+        bool thwarted = true;
+
+        int obsTotal = 0;
+        int obsDone = 0;
+
+        foreach (var mind in minds)
+        {
+            if ((!_mindSystem.IsCharacterDeadIc(mind)) ||
+                (TryComp<CuffableComponent>(mind.Comp.OwnedEntity, out var cuffed) && cuffed.CuffedHandCount > 0))
+                thwarted = false;
+
+            List<EntityUid> obs = mind.Comp.Objectives;
+
+            obsTotal += obs.Count();
+
+            foreach (EntityUid ob in obs)
+            {
+                float? p = _objective.GetProgress(ob, mind);
+
+                if (p == 1)
+                    obsDone += 1;
+            }
+        }
+
+        // possibly the worst logic i've written in my time writing C#
+        switch (thwarted)
+        {
+            case true:
+                outcome = (obsTotal == obsDone) ? 4: 5;
+                break;
+            case false:
+                if (obsTotal == obsDone)
+                {
+                    outcome = 1;
+                    break;
+                }
+                outcome = (obsDone > (obsTotal * 0.5f)) ? 2 : 3;
+                break;
+        }
+
+        return true;
+    }
+// Pinwheel-end - traitor remake
 
     private void AfterEntitySelected(Entity<TraitorRuleComponent> ent, ref AfterAntagEntitySelectedEvent args)
     {
@@ -172,13 +287,6 @@ public sealed partial class TraitorRuleSystem : GameRuleSystem<TraitorRuleCompon
 
 
         return (null, briefing);
-    }
-
-    // TODO: AntagCodewordsComponent
-    private void OnObjectivesTextPrepend(EntityUid uid, TraitorRuleComponent comp, ref ObjectivesTextPrependEvent args)
-    {
-        if(comp.GiveCodewords)
-            args.Text += "\n" + Loc.GetString("traitor-round-end-codewords", ("codewords", string.Join(", ", _codewordSystem.GetCodewords(comp.CodewordFactionPrototypeId))));
     }
 
     // TODO: figure out how to handle this? add priority to briefing event?
