@@ -17,6 +17,10 @@
     {
       "name": "riot-inhand-left",
       "directions": 4
+    },
+    {
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
     }
   ]
 }
