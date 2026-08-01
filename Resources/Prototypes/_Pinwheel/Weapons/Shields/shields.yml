@@ -11,6 +11,11 @@
     - type: Item
       sprite: _Pinwheel\Weapons\Melee\Shields\riot.rsi
       size: Ginormous
+    - type: Clothing
+      sprite: _Pinwheel\Weapons\Melee\Shields\riot.rsi
+      quickEquip: false
+      slots:
+      - suitStorage
     - type: Blocking
       passiveBlockModifier:
         coefficients:
