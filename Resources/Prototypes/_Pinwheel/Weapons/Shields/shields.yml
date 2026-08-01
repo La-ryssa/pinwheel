@@ -6,13 +6,13 @@
   abstract: true
   components:
     - type: Sprite
-      sprite: _Pinwheel\Weapons\Melee\Shields\riot.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
       state: riot-icon
     - type: Item
-      sprite: _Pinwheel\Weapons\Melee\Shields\riot.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
       size: Ginormous
     - type: Clothing
-      sprite: _Pinwheel\Weapons\Melee\Shields\riot.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
       quickEquip: false
       slots:
       - suitStorage
@@ -115,7 +115,7 @@
   description: A shield built for withstanding lasers, but not much else.
   components:
     - type: Sprite
-      sprite: _Pinwheel\Weapons\Melee\Shields\riot_laser.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/security_laser.rsi
       state: riot_laser-icon
     - type: Item
       heldPrefix: riot_laser
@@ -136,7 +136,7 @@
   description: A shield built for protecting against ballistics, but not much else.
   components:
     - type: Sprite
-      sprite: _Pinwheel\Weapons\Melee\Shields\riot_bullet.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/security_ballistic.rsi
       state: riot_bullet-icon
     - type: Item
       heldPrefix: riot_bullet
@@ -159,7 +159,7 @@
   description: A shield made of cardboard. Won't protect you from much.
   components:
     - type: Sprite
-      sprite: _Pinwheel\Weapons\Melee\Shields\card_shield.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/cardboard.rsi
       state: cardshield-icon
     - type: Item
       heldPrefix: cardshield
@@ -279,7 +279,7 @@
       - type: DisarmMalus
         malus: 0.6
     - type: Sprite
-      sprite: _Pinwheel\Weapons\Melee\Shields\e_shield.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/syndicate_energy.rsi
       layers:
         - state: eshield-icon
         - state: eshield-on
@@ -367,9 +367,9 @@
   description: Something inside is burned out, it is no longer functional.
   components:
     - type: Sprite
-      sprite: _Pinwheel\Weapons\Melee\Shields\e_shield.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/syndicate_energy.rsi
       state: eshield-icon
     - type: Item
-      sprite: _Pinwheel\Weapons\Melee\Shields\e_shield.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/syndicate_energy.rsi
       size: Small
       heldPrefix: eshield
