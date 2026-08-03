@@ -11,6 +11,7 @@
     - type: Item
       sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
       size: Ginormous
+      heldPrefix: riot
     - type: Clothing
       sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
       quickEquip: false
@@ -118,7 +119,10 @@
       sprite: _Pinwheel/Weapons/Melee/Shields/security_laser.rsi
       state: riot_laser-icon
     - type: Item
+      sprite: _Pinwheel/Weapons/Melee/Shields/security_laser.rsi
       heldPrefix: riot_laser
+    - type: Clothing
+      sprite: _Pinwheel/Weapons/Melee/Shields/security_laser.rsi
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -139,7 +143,10 @@
       sprite: _Pinwheel/Weapons/Melee/Shields/security_ballistic.rsi
       state: riot_bullet-icon
     - type: Item
+      sprite: _Pinwheel/Weapons/Melee/Shields/security_ballistic.rsi
       heldPrefix: riot_bullet
+    - type: Clothing
+      sprite: _Pinwheel/Weapons/Melee/Shields/security_ballistic.rsi
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -162,7 +169,10 @@
       sprite: _Pinwheel/Weapons/Melee/Shields/cardboard.rsi
       state: cardshield-icon
     - type: Item
+      sprite: _Pinwheel/Weapons/Melee/Shields/cardboard.rsi
       heldPrefix: cardshield
+    - type: Clothing
+      sprite: _Pinwheel/Weapons/Melee/Shields/cardboard.rsi
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -217,6 +227,8 @@
     - type: Item
       sprite: Objects/Weapons/Melee/web-shield.rsi
       heldPrefix: icon
+#    - type: Clothing
+#      sprite: _Pinwheel/Weapons/Melee/Shields/web-shield.rsi
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -289,7 +301,7 @@
           map: [ "shield" ]
     - type: Item
       size: Small
-      sprite: Objects/Weapons/Melee/e_shield.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/syndicate_energy.rsi
       heldPrefix: eshield
     - type: UseDelay
       delay: 0.5

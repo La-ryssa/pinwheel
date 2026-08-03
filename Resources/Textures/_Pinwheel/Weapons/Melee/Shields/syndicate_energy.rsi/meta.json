@@ -28,10 +28,6 @@
     {
       "name": "inhand-left-shield",
       "directions": 4
-    },
-    {
-      "name": "equipped-SUITSTORAGE",
-      "directions": 4
     }
   ]
 }
