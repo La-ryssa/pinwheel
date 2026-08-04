@@ -8,14 +8,14 @@
   },
   "states": [
     {
-      "name": "cardshield-icon"
+      "name": "icon"
     },
     {
-      "name": "cardshield-inhand-right",
+      "name": "icon-inhand-right",
       "directions": 4
     },
     {
-      "name": "cardshield-inhand-left",
+      "name": "icon-inhand-left",
       "directions": 4
     },
     {

@@ -7,11 +7,11 @@
   components:
     - type: Sprite
       sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
-      state: riot-icon
+      state: icon
     - type: Item
       sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
       size: Ginormous
-      heldPrefix: riot
+      heldPrefix: icon
     - type: Clothing
       sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
       quickEquip: false
@@ -95,10 +95,8 @@
   components:
     - type: Sprite
       sprite: _Pinwheel/Weapons/Melee/Shields/security_laser.rsi
-      state: riot_laser-icon
     - type: Item
       sprite: _Pinwheel/Weapons/Melee/Shields/security_laser.rsi
-      heldPrefix: riot_laser
     - type: Clothing
       sprite: _Pinwheel/Weapons/Melee/Shields/security_laser.rsi
     - type: Blocking
@@ -117,10 +115,8 @@
   components:
     - type: Sprite
       sprite: _Pinwheel/Weapons/Melee/Shields/security_ballistic.rsi
-      state: riot_bullet-icon
     - type: Item
       sprite: _Pinwheel/Weapons/Melee/Shields/security_ballistic.rsi
-      heldPrefix: riot_bullet
     - type: Clothing
       sprite: _Pinwheel/Weapons/Melee/Shields/security_ballistic.rsi
     - type: Blocking
@@ -141,10 +137,8 @@
   components:
     - type: Sprite
       sprite: _Pinwheel/Weapons/Melee/Shields/cardboard.rsi
-      state: cardshield-icon
     - type: Item
       sprite: _Pinwheel/Weapons/Melee/Shields/cardboard.rsi
-      heldPrefix: cardshield
     - type: Clothing
       sprite: _Pinwheel/Weapons/Melee/Shields/cardboard.rsi
     - type: Blocking

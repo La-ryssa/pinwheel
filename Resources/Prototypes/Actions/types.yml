@@ -285,8 +285,8 @@
   description: Raise or lower your shield.
   components:
   - type: Action
-    icon: { sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi, state: riot-icon }
-    iconOn: { sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi, state: riot-icon }
+    icon: { sprite: _Pinwheel/Weapons/Melee/Shields/syndicate_energy.rsi, state: eshield-on }
+    iconOn: { sprite: _Pinwheel/Weapons/Melee/Shields/syndicate_energy.rsi, state: eshield-icon }
 
 - type: entity
   parent: BaseMentalAction

@@ -8,14 +8,14 @@
   },
   "states": [
     {
-      "name": "riot_laser-icon"
+      "name": "icon"
     },
     {
-      "name": "riot_laser-inhand-right",
+      "name": "icon-inhand-right",
       "directions": 4
     },
     {
-      "name": "riot_laser-inhand-left",
+      "name": "icon-inhand-left",
       "directions": 4
     },
     {

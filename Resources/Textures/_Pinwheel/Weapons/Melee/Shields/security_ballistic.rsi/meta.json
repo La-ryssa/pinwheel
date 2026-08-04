@@ -8,14 +8,14 @@
   },
   "states": [
     {
-      "name": "riot_bullet-icon"
+      "name": "icon"
     },
     {
-      "name": "riot_bullet-inhand-right",
+      "name": "icon-inhand-right",
       "directions": 4
     },
     {
-      "name": "riot_bullet-inhand-left",
+      "name": "icon-inhand-left",
       "directions": 4
     },
     {
