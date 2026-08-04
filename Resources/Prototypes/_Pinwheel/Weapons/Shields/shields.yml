@@ -12,13 +12,6 @@
     sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
     heldPrefix: icon
     size: Ginormous
-  - type: Clothing
-    sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
-    quickEquip: false
-    equipDelay: 1s
-    unequipDelay: 1s
-    slots:
-    - suitStorage
   - type: Blocking
     passiveBlockModifier:
       flatReductions:
@@ -99,8 +92,6 @@
     sprite: _Pinwheel/Weapons/Melee/Shields/security_laser.rsi
   - type: Item
     sprite: _Pinwheel/Weapons/Melee/Shields/security_laser.rsi
-  - type: Clothing
-    sprite: _Pinwheel/Weapons/Melee/Shields/security_laser.rsi
   - type: Blocking
     passiveBlockModifier:
       flatReductions:
@@ -118,8 +109,6 @@
   - type: Sprite
     sprite: _Pinwheel/Weapons/Melee/Shields/security_ballistic.rsi
   - type: Item
-    sprite: _Pinwheel/Weapons/Melee/Shields/security_ballistic.rsi
-  - type: Clothing
     sprite: _Pinwheel/Weapons/Melee/Shields/security_ballistic.rsi
   - type: Blocking
     passiveBlockModifier:
@@ -140,8 +129,6 @@
   - type: Sprite
     sprite: _Pinwheel/Weapons/Melee/Shields/cardboard.rsi
   - type: Item
-    sprite: _Pinwheel/Weapons/Melee/Shields/cardboard.rsi
-  - type: Clothing
     sprite: _Pinwheel/Weapons/Melee/Shields/cardboard.rsi
   - type: Blocking
     passiveBlockModifier:
@@ -180,8 +167,6 @@
   - type: Sprite
     sprite: _Pinwheel/Weapons/Melee/Shields/web.rsi
   - type: Item
-    sprite: _Pinwheel/Weapons/Melee/Shields/web.rsi
-  - type: Clothing
     sprite: _Pinwheel/Weapons/Melee/Shields/web.rsi
   - type: Blocking
     passiveBlockModifier:
