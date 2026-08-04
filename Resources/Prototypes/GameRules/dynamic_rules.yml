@@ -47,13 +47,6 @@
         - !type:RoundDurationCondition
           min: 300 # minimum 5 minutes
         children:
-        - id: DragonSpawn
-          weight: 15
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-          - !type:RoundDurationCondition
-            min: 900 # 15 minutes
         - id: ParadoxCloneSpawn
           weight: 25
           conditions:
@@ -71,12 +64,3 @@
             min: 20
           - !type:RoundDurationCondition
             min: 2700 # 45 minutes
-        - id: LoneOpsSpawn
-          weight: 5
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-          - !type:PlayerCountCondition
-            min: 20
-          - !type:RoundDurationCondition
-            min: 2100 # 35 minutes

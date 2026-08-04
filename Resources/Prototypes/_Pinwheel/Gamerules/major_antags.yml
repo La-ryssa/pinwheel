@@ -12,6 +12,7 @@
       max: 420
   - type: AntagSelection
     agentName: traitor-round-end-agent-name
+    selectionTime: PrePlayerSpawn
     lateJoinAdditional: true
     antags:
     - !type:LinearAntagCount

@@ -15,9 +15,6 @@ store-category-pointless = Pointless
 store-category-objective = Objective
 store-discounted-items = Discounts
 
-# Revenant
-store-category-abilities = Abilities
-
 # Nukie Delivery
 store-category-nukie-delivery = Offers
 

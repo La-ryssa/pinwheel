@@ -11,7 +11,10 @@
     prototypes: [SyndicateOperativeGearExtremelyBasic]
     roleLoadout: [ RoleSurvivalSyndicate ]
   - type: RandomMetadata
-    nameSegments: [NamesDeathCommando]
+    nameSegments:
+    - NamesDeathCommandoFirst
+    - NamesDeathCommandoLast
+    nameFormat: name-format-standard
   - type: NpcFactionMember
     factions:
     - Syndicate
@@ -38,18 +41,9 @@
   components:
   - type: NukeOperative
   - type: RandomHumanoidAppearance
-
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: MobHuman
-  id: MobHumanLoneNuclearOperative
-  name: Lone Operative
-  components:
-  - type: RandomHumanoidAppearance
     randomizeName: false
-  - type: NukeOperative
   - type: Loadout
-    prototypes: [SyndicateLoneOperativeGearFull]
+    prototypes: [ SyndicateOperativeGearFull ]
     roleLoadout: [ RoleSurvivalSyndicate ]
   - type: RandomMetadata
     nameSegments:
