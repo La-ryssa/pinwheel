@@ -10,6 +10,7 @@
     state: icon
   - type: Item
     sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
+    heldPrefix: icon
     size: Ginormous
   - type: Clothing
     sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
