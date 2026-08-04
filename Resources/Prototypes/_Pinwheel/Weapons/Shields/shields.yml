@@ -11,7 +11,6 @@
     - type: Item
       sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
       size: Ginormous
-      heldPrefix: icon
     - type: Clothing
       sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
       quickEquip: false
@@ -177,10 +176,8 @@
   components:
     - type: Sprite
       sprite: _Pinwheel/Weapons/Melee/Shields/web.rsi
-      state: icon
     - type: Item
       sprite: _Pinwheel/Weapons/Melee/Shields/web.rsi
-      heldPrefix: icon
     - type: Clothing
       sprite: _Pinwheel/Weapons/Melee/Shields/web.rsi
     - type: Blocking
