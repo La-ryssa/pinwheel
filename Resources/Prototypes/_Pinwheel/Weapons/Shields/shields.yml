@@ -222,13 +222,13 @@
   description: A stringy shield. It's weak, and doesn't seem to do well against heat.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Melee/web-shield.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/web.rsi
       state: icon
     - type: Item
-      sprite: Objects/Weapons/Melee/web-shield.rsi
+      sprite: _Pinwheel/Weapons/Melee/Shields/web.rsi
       heldPrefix: icon
-#    - type: Clothing
-#      sprite: _Pinwheel/Weapons/Melee/Shields/web-shield.rsi
+    - type: Clothing
+      sprite: _Pinwheel/Weapons/Melee/Shields/web.rsi
     - type: Blocking
       passiveBlockModifier:
         coefficients:
