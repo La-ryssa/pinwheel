@@ -2,7 +2,7 @@
   "version": 1,
   "size": {"x": 32, "y": 32},
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by PixelTheKermit (github) for SS14",
+  "copyright": "Made by PixelTheKermit (github) for SS14, suit storage state authored by Lady Death's Head (La_Ryssa on github)",
   "states": [
     {
       "name": "icon"
