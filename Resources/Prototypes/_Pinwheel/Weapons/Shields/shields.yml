@@ -14,8 +14,8 @@
   - type: Clothing
     sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
     quickEquip: false
-    equipDelay: 0.5s
-    unequipDelay: 0.5s
+    equipDelay: 1s
+    unequipDelay: 1s
     slots:
     - suitStorage
   - type: Blocking
