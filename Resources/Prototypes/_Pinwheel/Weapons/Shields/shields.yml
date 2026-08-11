@@ -14,6 +14,7 @@
   - type: Clothing
     sprite: _Pinwheel/Weapons/Melee/Shields/security_riot.rsi
     quickEquip: false
+    equipWhileMoving: true
     equipDelay: 1s
     unequipDelay: 1s
     slots:
