@@ -57,3 +57,84 @@ FoodTacoDragon: null
 
 # 2026-07-29
 CrateCargoGambling: null
+
+# 2026-07-31
+ExtractableServerCrewMonitor: MachineServerCrewmonitor
+ExtractableServerResearch: null
+
+Biogenerator: MachineLatheBiogenerator
+CutterMachine: MachineLatheCutter
+ExosuitFabricator: MachineLatheRobotics
+MedicalTechFab: MachineLatheMedical
+Protolathe: MachineLatheScience
+SecurityTechFab: MachineLatheSecurity
+UniformPrinter: MachineLatheUniform
+AmmoTechFab: null
+Autolathe: null
+AutolatheHyperConvection: null
+Biofabricator: null
+OreProcessor: null
+OreProcessorIndustrial: null
+ProtolatheHyperConvection: null
+CircuitImprinter: null
+CircuitImprinterHyperConvection: null
+MachineFlatpacker: null
+
+AutolatheMachineCircuitboard: null
+CircuitImprinterMachineCircuitboard: null
+ProtolatheMachineCircuitboard: null
+
+ResearchComputerCircuitboard: null
+TechDiskComputerBoard: null
+
+DiseaseDiagnoser: null
+ComputerResearchAndDevelopment: null
+ComputerTechnologyDiskTerminal: null
+Vaccinator: null
+
+BookHowToRockAndStone: null
+BlueprintFulton: null
+BlueprintSeismicCharge: null
+CrateSalvageEquipment: null
+CrateSalvageHardsuit: null
+
+ResearchDisk: null
+ResearchDisk5000: null
+ResearchDisk10000: null
+ResearchDiskDebug: null
+
+TechnologyDisk: null
+TechnologyDiskT1: null
+TechnologyDiskT2: null
+TechnologyDiskT3: null
+TechnologyDiskArsenal: null
+TechnologyDiskCivilianServices: null
+TechnologyDiskExperimental: null
+TechnologyDiskIndustrial: null
+TechnologyDiskRare: null
+
+SalvageCanisterSpawner: null
+SalvageFleshSpawner: null
+SalvageLivingLightSpawner: null
+SalvageLootSpawner: null
+SalvageMaterialCrateSpawner: null
+SalvageMobSpawner: null
+SalvageMobSpawner75: null
+SalvageSpawnerEquipment: null
+SalvageSpawnerEquipmentValuable: null
+SalvageSpawnerMobMagnet: null
+SalvageSpawnerMobMagnet100: null
+SalvageSpawnerMobMiningAsteroid: null
+SalvageSpawnerMobShark: null
+SalvageSpawnerScrapCommon: null
+SalvageSpawnerScrapCommon75: null
+SalvageSpawnerScrapValuable: null
+SalvageSpawnerScrapValuable75: null
+SalvageSpawnerTreasure: null
+SalvageSpawnerTreasureValuable: null
+
+SpaceTickSpawner: null
+SpawnMobBearSalvage: null
+SpawnMobCobraSalvage: null
+SpawnMobKangarooSalvage: null
+SpawnMobSpiderSalvage: null
