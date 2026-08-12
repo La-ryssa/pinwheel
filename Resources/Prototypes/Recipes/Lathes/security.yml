@@ -105,14 +105,6 @@
     Steel: 400
     Glass: 400
 
-- type: latheRecipe
-  parent: BaseShieldRecipe
-  id: TelescopicShield
-  result: TelescopicShield
-  materials:
-    Steel: 300
-    Glass: 800
-
 # Targets
 - type: latheRecipe
   parent: BaseTargetRecipe
