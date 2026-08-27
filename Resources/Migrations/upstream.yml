@@ -647,7 +647,7 @@ WeaponEnergyTurretStationControlPanel: WeaponEnergyTurretSecurityControlPanel
 WeaponEnergyTurretStationMachineCircuitboard: WeaponEnergyTurretSecurityMachineCircuitboard
 
 # 2025-05-30
-SpawnHonkBot: SpawnMobHonkBot
+SpawnHonkBot: null # Pinwheel
 
 # 2025-06-01
 CrateFoodPizzaLarge: CrateFoodPizza
