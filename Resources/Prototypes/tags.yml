@@ -78,7 +78,7 @@
   id: Beer # CargoBounty: BountyBeer
 
 - type: Tag
-  id: BikeHorn # ConstructionGraph: HonkBot, BananiumHorn
+  id: BikeHorn # ConstructionGraph: BananiumHorn
 
 - type: Tag
   id: Bloodpack # Storage whitelist: ClothingBeltMedical
@@ -712,9 +712,6 @@
 
 - type: Tag
   id: HandGrenade # Storage whitelist: ClothingBeltSecurity
-
-- type: Tag
-  id: HappyHonk # ConstructionGraph: HonkBot
 
 - type: Tag
   id: Hardsuit # Used by SolutionInjectOnCollideSystem to guard from injection. Copied TODO replace with a cancellable event
