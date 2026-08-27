@@ -94,9 +94,6 @@ ghost-role-information-willow-description = You're a kangaroo named Willow! Will
 ghost-role-information-honkbot-name = Honkbot
 ghost-role-information-honkbot-description = An artificial being of pure evil.
 
-ghost-role-information-jonkbot-name = Jonkbot
-ghost-role-information-jonkbot-description = An artificial being of pure evil.
-
 ghost-role-information-mimebot-name = Mimebot
 ghost-role-information-mimebot-description = A Mimebot, act like a mime but don't act like a greytider.
 
