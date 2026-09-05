@@ -311,7 +311,6 @@
     children:
     - id: CyberPen
     - id: CigPackSyndicate
-    - id: SoapSyndie
     - id: SyndicatePersonalAI
     - id: UplinkLighterBox
 
