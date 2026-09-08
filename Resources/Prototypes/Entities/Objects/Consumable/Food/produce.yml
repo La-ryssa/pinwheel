@@ -932,9 +932,9 @@
       reagents:
       - ReagentId: Nutriment
         Quantity: 5
-      - ReagentId: SpaceLube
-        Quantity: 15
       - ReagentId: Vitamin
+        Quantity: 5
+      - ReagentId: Water
         Quantity: 5
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/blue_tomato.rsi
@@ -946,7 +946,7 @@
     grindableSolutionName: food
     juiceSolution:
       reagents:
-      - ReagentId: SpaceLube
+      - ReagentId: JuiceTomato
         Quantity: 10
   - type: Destructible
     thresholds:

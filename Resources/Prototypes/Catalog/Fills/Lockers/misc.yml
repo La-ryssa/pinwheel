@@ -277,7 +277,6 @@
   table: !type:GroupSelector
     children:
     - id: ClothingHandsGlovesColorYellow
-    - id: DrinkSpaceLube
     - id: WelderIndustrial
     - id: ClothingHeadHatWeldingMaskFlame
     - id: PowerCellMedium
