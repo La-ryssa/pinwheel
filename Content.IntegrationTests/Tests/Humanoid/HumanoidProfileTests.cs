@@ -21,8 +21,8 @@ namespace Content.IntegrationTests.Tests.Humanoid;
 public sealed class HumanoidProfileTests : GameTest
 {
     private static readonly EntProtoId BaseSpecies = "MobHuman";
-    private static readonly ProtoId<SpeciesPrototype> SlimePerson = "SlimePerson";
-    public static readonly ProtoId<EmoteSoundsPrototype> SlimeVoice = "FemaleSlime";
+    private static readonly ProtoId<SpeciesPrototype> Vulpkanin = "Vulpkanin";
+    public static readonly ProtoId<EmoteSoundsPrototype> VulpkaninVoice = "FemaleVulpkanin";
 
     private static string[] _species = GameDataScrounger.PrototypesOfKind<SpeciesPrototype>();
 
@@ -48,16 +48,16 @@ public sealed class HumanoidProfileTests : GameTest
                 .WithSex(Sex.Female)
                 .WithAge(67)
                 .WithGender(Gender.Neuter)
-                .WithSpecies(SlimePerson)
-                .WithVoice(SlimeVoice));
+                .WithSpecies(Vulpkanin)
+                .WithVoice(VulpkaninVoice));
 
             var voiceComponent = SEntMan.GetComponent<VocalComponent>(body);
 
             Assert.That(humanoidComponent.Age, Is.EqualTo(67));
             Assert.That(humanoidComponent.Sex, Is.EqualTo(Sex.Female));
             Assert.That(humanoidComponent.Gender, Is.EqualTo(Gender.Neuter));
-            Assert.That(humanoidComponent.Species, Is.EqualTo(SlimePerson));
-            Assert.That(humanoidComponent.Voice, Is.EqualTo(SlimeVoice));
+            Assert.That(humanoidComponent.Species, Is.EqualTo(Vulpkanin));
+            Assert.That(humanoidComponent.Voice, Is.EqualTo(VulpkaninVoice));
 
             var speciesProto = SProtoMan.Index(humanoidComponent.Species);
 
@@ -109,7 +109,7 @@ public sealed class HumanoidProfileTests : GameTest
             Assert.That(proto.Sexes.Contains(humanoidComponent.Sex), Is.True, $"Character has sex not found in the species prototype! Current: {humanoidComponent.Sex}");
             Assert.That(humanoidComponent.Species, Is.EqualTo(species), $"Species does not match! Expected: {species} Current: {humanoidComponent.Species}");
             var strategy = Server.ProtoMan.Index(proto.SkinColoration).Strategy;
-            Assert.That(strategy.VerifySkinColor(profile.Appearance.SkinColor, out var reason), Is.True, $"Failed to verify the skin color ({profile.Appearance.SkinColor}) from strategy {strategy}. Reason: {reason}");
+            Assert.That(strategy.VerifyClampedSkinColor(profile.Appearance.SkinColor, out var reason), Is.True, $"Failed to verify the skin color ({profile.Appearance.SkinColor}) from strategy {strategy}. Reason: {reason}");
 
             AssertValidProfile((body, humanoidComponent), profile);
         });
