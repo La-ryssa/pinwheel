@@ -154,23 +154,6 @@
         path: /Audio/Effects/smoke.ogg
 
 - type: reaction
-  id: Foam
-  priority: -10
-  impact: High
-  conserveEnergy: false
-  reactants:
-    Fluorosurfactant:
-      amount: 1
-    Water:
-      amount: 1
-  effects:
-    - !type:AreaReactionEffect
-      duration: 10
-      prototypeId: Foam
-      sound:
-        path: /Audio/Effects/extinguish.ogg
-
-- type: reaction
   id: IronMetalFoam
   impact: High
   priority: -10
