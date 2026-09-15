@@ -2694,8 +2694,6 @@
         Quantity: 20
       - ReagentId: JuiceBerry
         Quantity: 20
-      - ReagentId: Artifexium
-        Quantity: 1
   - type: Extractable
     juiceSolution:
       reagents:
