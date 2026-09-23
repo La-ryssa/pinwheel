@@ -240,7 +240,6 @@
       children:
       - id: SnapPopBox
       - id: BoxDarts
-      - id: GrenadeFoamDart
       - !type:GroupSelector # REAL fake grenades
         weight: 0.05 # 2 in 186. Rare in order to not spoil the surprise
         children:
@@ -257,16 +256,6 @@
         tableId: RandomFoamGunTable
       - !type:NestedSelector
         tableId: RandomCapGunTable
-
-- type: entityTable # price 100
-  id: RandomFoamGunTable
-  table: !type:AllSelector # Need to spawn with ammo
-    children:
-    - !type:GroupSelector
-      children:
-      - id: FoamCrossbow
-      - id: WeaponRifleFoam
-    - id: BoxDonkSoftBox
 
 - type: entityTable
   id: RandomCapGunTable
