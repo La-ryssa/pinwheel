@@ -33,3 +33,148 @@ WallDiamond: WallSolid
 WallIce: WallSolid
 WallMarble: WallRiveted # this is actually undoing upstream migrations so it's specified
 WallSandstone: WallSolid # i didn't actually have to remove this one but i did not care enough to fix it
+
+# 2026-09-16
+ClothingBackpack: ClothingBackpackGeneric
+ClothingBackpackAtmospherics: ClothingBackpackEngineering
+ClothingBackpackBrigmedic: ClothingBackpackSecurity
+ClothingBackpackDebug: ClothingBackpackGeneric
+ClothingBackpackDebug2: ClothingBackpackGeneric
+ClothingBackpackDebug3: ClothingBackpackGeneric
+ClothingBackpackDebug4: ClothingBackpackGeneric # god why were there 4 of them
+ClothingBackpackElectropack: null
+ClothingBackpackHolding: null
+ClothingBackpackMerc: null
+ClothingBackpackSalvage: ClothingBackpackCargo
+ClothingBackpackChemistry: ClothingBackpackMedical
+ClothingBackpackVirology: ClothingBackpackMedical
+ClothingBackpackGenetics: ClothingBackpackMedical
+ClothingBackpackIan: ClothingBackpackGeneric
+
+ClothingBackpackDuffel: ClothingBackpackGeneric
+ClothingBackpackDuffelAtmospherics: ClothingBackpackEngineering
+ClothingBackpackDuffelEngineering: ClothingBackpackEngineering
+ClothingBackpackDuffelBrigmedic: ClothingBackpackSecurity
+ClothingBackpackDuffelCargo: ClothingBackpackCargo
+ClothingBackpackDuffelCaptain: ClothingBackpackCaptain
+ClothingBackpackDuffelChemistry: ClothingBackpackMedical
+ClothingBackpackDuffelClown: ClothingBackpackClown
+ClothingBackpackDuffelGenetics: ClothingBackpackMedical
+ClothingBackpackDuffelHolding: null
+ClothingBackpackDuffelHydroponics: ClothingBackpackHydroponics
+ClothingBackpackDuffelMedical: ClothingBackpackMedical
+ClothingBackpackDuffelMime: ClothingBackpackMime
+ClothingBackpackDuffelSalvage: ClothingBackpackCargo
+ClothingBackpackDuffelScience: ClothingBackpackScience
+ClothingBackpackDuffelSecurity: ClothingBackpackSecurity
+ClothingBackpackDuffelSyndicate: ClothingBackpackSyndicateDuffel
+ClothingBackpackDuffelVirology: ClothingBackpackMedical
+
+ClothingBackpackSatchel: ClothingBackpackGenericSatchel
+ClothingBackpackSatchelBrigmedic: ClothingBackpackSecuritySatchel
+ClothingBackpackSatchelCargo: ClothingBackpackCargoSatchel
+ClothingBackpackSatchelCaptain: ClothingBackpackCaptainSatchel
+ClothingBackpackSatchelChemistry: ClothingBackpackMedicalSatchel
+ClothingBackpackSatchelClown: ClothingBackpackClownSatchel
+ClothingBackpackSatchelEngineering: ClothingBackpackEngineeringSatchel
+ClothingBackpackSatchelGenetics: ClothingBackpackMedical
+ClothingBackpackSatchelHolding: null
+ClothingBackpackSatchelHydroponics: ClothingBackpackHydroponicsSatchel
+ClothingBackpackSatchelLeather: ClothingBackpackLeatherSatchel
+ClothingBackpackSatchelMedical: ClothingBackpackMedicalSatchel
+ClothingBackpackSatchelMime: ClothingBackpackMimeSatchel
+ClothingBackpackSatchelSalvage: ClothingBackpackCargoSatchel
+ClothingBackpackSatchelScience: ClothingBackpackScienceSatchel
+ClothingBackpackSatchelSecurity: ClothingBackpackSecuritySatchel
+ClothingBackpackSatchelVirology: ClothingBackpackMedicalSatchel
+
+# 2026-09-17
+ClothingBackpackDeathSquad: null
+ClothingBackpackERTChaplain: null
+ClothingBackpackERTEngineer: null
+ClothingBackpackERTJanitor: null
+ClothingBackpackERTLeader: null
+ClothingBackpackERTMedical: null
+ClothingBackpackERTSecurity: null
+# there was never a CBURN backpack because they suck
+
+ClothingOuterHardsuitDeathsquad: null # can't even capitalize IDs consistently
+ClothingOuterHardsuitCburn: null
+ClothingOuterHardsuitERTChaplain: null
+ClothingOuterHardsuitERTEngineer: null
+ClothingOuterHardsuitERTJanitor: null
+ClothingOuterHardsuitERTLeader: null
+ClothingOuterHardsuitERTMedical: null
+ClothingOuterHardsuitERTSecurity: null
+
+ClothingMaskGasDeathSquad: null
+ClothingMaskGasERT: null
+
+ClothingUniformJumpsuitDeathSquad: null
+ClothingUniformJumpsuitERTChaplain: null
+ClothingUniformJumpsuitERTEngineer: null
+ClothingUniformJumpsuitERTJanitor: null
+ClothingUniformJumpsuitERTLeader: null
+ClothingUniformJumpsuitERTMedic: null
+ClothingUniformJumpsuitERTSecurity: null
+# same for jumpsuits
+
+DeathsquadPDA: null
+ERTChaplainPDA: null
+ERTEngineerPDA: null
+ERTJanitorPDA: null
+ERTLeaderPDA: null
+ERTMedicPDA: null
+ERTSecurityPDA: null
+
+CratePermaEscapeSpawner: null
+CratePermaEscapeDigging: null
+CratePermaEscapeEVA: null
+CratePermaEscapeGun: null
+CratePermaEscapeBureacracy: null
+CratePermaEscapeLights: null
+CratePermaEscapeMats: null
+CratePermaEscapeGiftsFromSyndicate: null
+CratePermaEscapeMerc: null
+CratePermaEscapeComs: null
+CratePermaEscapeTowercap: null
+
+SpawnMobShark: null
+SalvageHumanCorpseSpawner: null
+SpawnMobBear: null
+SpawnMobHellspawn: null
+SpawnMobKangaroo: null
+SpawnMobSheepRainbow: null
+SpawnMobSheepSpace: null
+SpawnMobSyndicateFootsoldier: null
+SpawnMobSyndicateFootsoldierPilot: null
+SpawnMobXenoLonePraetorian: null
+RandomCargoCorpseSpawner: null
+RandomCommandCorpseSpawner: null
+RandomEngineerCorpseSpawner: null
+RandomMedicCorpseSpawner: null
+RandomScienceCorpseSpawner: null
+RandomSecurityCorpseSpawner: null
+RandomServiceCorpseSpawner: null
+
+CommandVisitorSpawner: null
+CossackSpawner: null
+VisitorCargoTechnicianSpawner: null
+VisitorClownSpawner: null
+SyndieVisitorSpawner: null
+SyndieSoldierSpawner: null
+SyndieSoldierTeamLeaderSpawner: null
+
+ComputerSalvageJobBoard: null
+SalvageJobBoardComputerCircuitboard: null
+ComputerSalvageExpedition: null
+SalvageExpeditionsComputerCircuitboard: null
+
+SalvageLocator: null
+SalvageMagnet: null
+SalvageMagnetMachineCiruitboard: null
+
+BiomassReclaimer: null
+CloningPod: null
+ComputerCloningConsole: null
+MedicalScanner: null

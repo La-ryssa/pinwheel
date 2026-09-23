@@ -7,8 +7,6 @@
       weight: 85
     - id: BriefcaseSmugglerCash
       weight: 10
-    - id: ClothingBackpackDuffelClownSmuggler
-      weight: 5
 
 #Table
 - type: entityTable
@@ -558,10 +556,6 @@
       weight: 15
     - id: EggSpider
       weight: 5
-    - id: ArtifactFragment1
-      amount: !type:RangeNumberSelector
-        range: 1, 2
-      weight: 10
     - id: AnomalyCorePyroclastic
       amount: !type:RangeNumberSelector
         range: 1, 3
@@ -662,8 +656,5 @@
       amount: !type:RangeNumberSelector
         range: 1, 10
     - id: SpaceTickCube
-      amount: !type:RangeNumberSelector
-        range: 1, 10
-    - id: AbominationCube
       amount: !type:RangeNumberSelector
         range: 1, 10

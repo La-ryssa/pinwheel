@@ -268,7 +268,7 @@
   id: JobSalvageSpecialist
   groups:
   - GroupTankHarness
-  - SalvageSpecialistBackpack
+  - CargoTechnicianBackpack
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistShoes
   - Glasses
@@ -328,7 +328,7 @@
   groups:
   - GroupTankHarness
   - AtmosphericTechnicianJumpsuit
-  - AtmosphericTechnicianBackpack
+  - StationEngineerBackpack
   - AtmosphericTechnicianOuterClothing
   - AtmosphericTechnicianShoes
   - AssistiveItems
@@ -571,11 +571,6 @@
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupTankHarness
-
-- type: roleLoadout
-  id: RoleSurvivalMilitaryDouble
-  groups:
-  - SurvivalMilitaryDouble
 
 - type: roleLoadout
   id: RoleSurvivalNukie
