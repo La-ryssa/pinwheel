@@ -186,9 +186,6 @@
   id: Bucket # Storage whitelist: JanitorialTrolley. ItemMapper: JanitorialTrolley. ConstructionGraph: CleanBot, scraphelmet
 
 - type: Tag
-  id: BulletFoam # Ammo: WeaponRifleFoam, FoamCrossbow, MagazineFoamBox, BoxDonkSoftBox
-
-- type: Tag
   id: Bun # LastElement key on burger associated MetamorphRecipes.
 
 - type: Tag

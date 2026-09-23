@@ -15,24 +15,6 @@
 
 # Boxes
 - type: entity
-  parent: BoxDonkSoftBase
-  id: BoxDonkSoftBox
-  name: foam dart box
-  description: A cardboard box of foam darts.
-  components:
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-        - BulletFoam
-    capacity: 40
-    proto: BulletFoam
-  - type: Sprite
-    sprite: Objects/Storage/boxes.rsi
-    layers:
-      - state: boxwidetoy
-      - state: shelltoy
-
-- type: entity
   parent: BaseMagazineBoxMagnum
   id: BoxCartridgeCap
   name: cap gun cartridge box
