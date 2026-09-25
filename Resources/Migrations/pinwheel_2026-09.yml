@@ -183,7 +183,19 @@ MedicalScanner: null
 FoamCrossbow: null
 WeaponRifleFoam: null
 BoxDonkSoftBox: null
+BoxDonkSoftBase: null
 MagazineFoamBox: null
 BulletFoam: null
 GrenadeFoamDart: null
 CrateFunFoamGuns: null
+
+RevolverCapGun: null
+RevolverCapGunFake: null
+CartridgeCap: null
+BoxCartridgeCap: null
+SpeedLoaderCap: null
+FoodRealCapfruit: null
+FoodFakeCapfruit: null
+FakeCapfruitPlants: null
+RealCapfruitPlants: null
+RealCapfruitSeeds: null

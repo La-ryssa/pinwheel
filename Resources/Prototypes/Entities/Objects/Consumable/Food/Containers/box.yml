@@ -680,7 +680,6 @@
     - id: PersonalAI
     - id: CrayonBox
     - id: ToySword
-    - id: RevolverCapGun
     - id: ToyRubberDuck
     - id: BikeHorn
       weight: 0.5
