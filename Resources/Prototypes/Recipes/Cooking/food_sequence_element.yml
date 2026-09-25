@@ -999,17 +999,6 @@
   tags:
   - Fruit
 
-# Capfruit
-
-- type: foodSequenceElement
-  id: Capfruit
-  name: food-sequence-content-capfruit
-  sprites:
-  - sprite: Objects/Specific/Hydroponics/capfruit.rsi
-    state: produce
-  tags:
-  - Fruit
-
 # Soybeans
 
 - type: foodSequenceElement
