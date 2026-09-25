@@ -449,7 +449,6 @@
       amount: !type:RangeNumberSelector
         range: 1, 3
     - id: GatfruitSeeds
-    - id: ToySword
     - id: NukeDiskFake
     - id: RadioJammer
     - id: SoapSyndie

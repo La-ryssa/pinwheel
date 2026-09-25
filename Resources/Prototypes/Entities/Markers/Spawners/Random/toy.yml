@@ -228,13 +228,6 @@
   id: AllToyWeaponsTable
   table: !type:GroupSelector
     children:
-    - !type:GroupSelector # Swords type group
-      children:
-      - id: ToyHammer
-      - id: ToySword
-      - id: FoamBlade
-      - id: FoamCutlass
-      - id: CardSword
     - !type:GroupSelector # Throwing type group
       rolls: 2 # Expendables need restocks
       children:

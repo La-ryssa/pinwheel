@@ -125,10 +125,4 @@
   id: ClothingHandsKnuckleDustersBrass
   graph: ClothingHandsKnuckleDustersBrass
   targetNode: icon
-
-- type: construction
-  parent: BaseWeapon
-  id: CardSword
-  graph: CardSword
-  targetNode: cardSword
 # endregion Weapons
