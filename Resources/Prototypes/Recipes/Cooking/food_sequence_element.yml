@@ -1010,15 +1010,6 @@
   tags:
   - Fruit
 
-- type: foodSequenceElement
-  id: CapfruitBurger
-  name: food-sequence-burger-content-capfruit
-  sprites:
-  - sprite: Objects/Specific/Hydroponics/capfruit.rsi
-    state: produce
-  tags:
-  - Fruit
-
 # Soybeans
 
 - type: foodSequenceElement

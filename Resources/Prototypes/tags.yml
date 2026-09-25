@@ -254,9 +254,6 @@
   id: CartridgeAntiMateriel # .60 high caliber ammo for powerful rifles like WeaponSniperHristov, Musket.
 
 - type: Tag
-  id: CartridgeCap # Specialty ammo for RevolverCapGun, RevolverCapGunFake.
-
-- type: Tag
   id: CartridgeCaselessRifle # Specialty ammo for WeaponPistolCobra.
 
 - type: Tag
@@ -1323,9 +1320,6 @@
   id: Spear # CargoBounty: BountySpear
 
 - type: Tag
-  id: SpeedLoaderCap # Ammo: RevolverCapGun, RevolverCapGunFake
-
-- type: Tag
   id: SpeedLoaderMagnum # Ammo: BaseWeaponRevolver, XenoArtifactGun
 
 - type: Tag
@@ -1441,9 +1435,6 @@
 
 - type: Tag
   id: ToyRubberDuck # ConstructionGraph: ClothingShoeSlippersDuck
-
-- type: Tag
-  id: ToySidearm # Storage whitelist: ClothingShoesClownBase
 
 - type: Tag
   id: ToyKnife # Storage whitelist: ClothingShoesClownBase
