@@ -366,8 +366,6 @@
         - id: ClothingShoesBootsLaceup
           amount: 2
         - id: ClothingHeadBandRed
-        - id: FoamCutlass
-          amount: 2
 
 - type: entity
   parent: CrateToyBox
