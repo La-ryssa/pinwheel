@@ -282,7 +282,6 @@
     - !type:GroupSelector # Orbs of "power"
       weight: 0.05 # 1 in 320
       children:
-      - id: SingularityToy
       - id: TeslaToy
       - id: PonderingOrb
 
