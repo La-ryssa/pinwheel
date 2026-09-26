@@ -1,3 +1,4 @@
+using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
 using Content.Shared._Pinwheel.AlienRock;
 using Content.Shared._Pinwheel.AlienRock.Equipment;
@@ -51,7 +52,12 @@ public sealed partial class AlienScannerDisplay : FancyWindow
         { // set text with empty node list if we're not connected
             var empty = new List<string>();
             SetText(false, empty);
+            SetSprite(null);
             return;
+        }
+        else
+        {
+            SetSprite(con.Attached);
         }
 
         if (rock.Nodes is null)
@@ -90,12 +96,13 @@ public sealed partial class AlienScannerDisplay : FancyWindow
             foreach (var node in nodes)
             {
                 var nodeLabel = new Button
-                { // using buttons for this is stupid but i cba making it look good because i don't know UI
+                { // buttons used as a shortcut for styling
                     Text = node,
-                    Margin = new Thickness(15, 5, 0, 0),
-                    MaxHeight = 40,
+                    Margin = new Thickness(0.5f, 1f, 0.5f, 0f),
+                    MinWidth = 200,
                     Disabled = true,
                 };
+                nodeLabel.AddStyleClass(StyleClass.ButtonOpenRight);
                 NodesList.Children.Add(nodeLabel);
             }
         }
@@ -105,5 +112,13 @@ public sealed partial class AlienScannerDisplay : FancyWindow
             NodesClearedLabel.Visible = true;
             NodesList.Visible = false;
         }
+    }
+
+    private void SetSprite(
+        EntityUid? rock)
+    {
+        SpriteView.SetEntity(rock);
+        SpriteView.Visible = rock.HasValue;
+        NoDataTex.Visible = !SpriteView.Visible;
     }
 }
