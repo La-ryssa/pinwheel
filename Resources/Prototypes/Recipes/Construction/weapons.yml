@@ -78,14 +78,6 @@
 
 - type: construction
   parent: BaseWeapon
-  id: CardShield
-  graph: CardShield
-  targetNode: cardShield
-  category: construction-category-weapons
-  objectType: Item
-
-- type: construction
-  parent: BaseWeapon
   id: ImprovisedArrow
   graph: ImprovisedArrow
   targetNode: ImprovisedArrow
