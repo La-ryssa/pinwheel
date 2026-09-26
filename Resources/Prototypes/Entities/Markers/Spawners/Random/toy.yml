@@ -228,16 +228,6 @@
   id: AllToyWeaponsTable
   table: !type:GroupSelector
     children:
-    - !type:GroupSelector # Throwing type group
-      rolls: 2 # Expendables need restocks
-      children:
-      - id: SnapPopBox
-      - id: BoxDarts
-      - !type:GroupSelector # REAL fake grenades
-        weight: 0.05 # 2 in 186. Rare in order to not spoil the surprise
-        children:
-        - id: GrenadeDummy
-        - id: SyndieTrickyBomb
     - !type:GroupSelector # Guns type group
       children:
       - id: WeaponStickyHand
