@@ -245,7 +245,6 @@
       tableId: AllCrayonsTable
     - id: CrayonBox
     - id: PlasticBanana
-    - id: NukeDiskFake
     - id: DiceBag
     - id: SpectralLocator
     - id: Magic9Ball
