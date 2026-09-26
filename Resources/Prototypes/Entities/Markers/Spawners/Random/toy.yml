@@ -407,22 +407,6 @@
 
 - type: entity
   parent: MarkerBase
-  id: ToyWeaponSpawner90
-  name: Toy Weapon Spawner
-  suffix: 90
-  components:
-  - type: Sprite
-    layers:
-    - state: red
-    - sprite: Objects/Fun/rubber_hammer.rsi
-      state: icon
-  - type: EntityTableSpawner
-    table: !type:NestedSelector
-      tableId: AllToyWeaponsTable
-      prob: 0.9
-
-- type: entity
-  parent: MarkerBase
   id: MiscToySpawner90
   name: Miscellaneous Toy Spawner
   suffix: 90
