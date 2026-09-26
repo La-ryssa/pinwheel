@@ -452,7 +452,6 @@
     - id: NukeDiskFake
     - id: RadioJammer
     - id: SoapSyndie
-    - id: SingularityToy
     - id: DehydratedSpaceCarp
 
 - type: entityTable #1x small
