@@ -201,7 +201,6 @@
       weight: 10
     - id: ToyFigurineWizardFake
     - id: ToyFigurineSkeleton
-    - id: ToyNuke
     - id: ToyFigurineOwlman
     - !type:NestedSelector
       tableId: AllFigurineMechsTable
@@ -279,11 +278,6 @@
       - id: PotatoAI
       - id: GoldenPersonalAI
         weight: 0.1 # 1 in 1,456. A truly rare item
-    - !type:GroupSelector # Orbs of "power"
-      weight: 0.05 # 1 in 320
-      children:
-      - id: TeslaToy
-      - id: PonderingOrb
 
 # Entities that don't do much more than make a unique sound. Plushies excluded.
 - type: entityTable # size 1x2  # price 100
